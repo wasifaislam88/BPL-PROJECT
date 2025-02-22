@@ -62,12 +62,12 @@ const AvailablePlayers = ({handleBtnActiveState, btnActive, coins}) => {
 
     return (
         <div className="container mx-auto ">
-            <div className="flex justify-between items-center mb-8">
-                <h1 className="font-bold text-3xl text-black">{btnActive.available ? "Available Players" : `Selected Players (${selectedPlayers.length}/6)`}</h1>
+            <div className="flex justify-between md:items-center mb-8  ">
+                <h1 className="font-bold text-3xl mx-6 text-black">{btnActive.available ? "Available Players" : `Selected Players (${selectedPlayers.length}/6)`}</h1>
                 <div className="flex">
-                    <button onClick={() => handleBtnActiveState("available")} className={`${btnActive.available? "border-l border-t border-b rounded-l-xl bg-[#E7FE29] font-bold text-black px-7 py-3" : "border-l border-t border-b rounded-l-xl text-gray-500 px-7 py-3"}`} >Available</button>
+                    <button onClick={() => handleBtnActiveState("available")} className={`${btnActive.available? "border-l border-t border-b rounded-l-xl bg-[#E7FE29] font-bold text-black lg:px-7 py-3" : "border-l border-t border-b rounded-l-xl text-gray-500 px-7 py-3"}`} >Available</button>
 
-                    <button onClick={() => handleBtnActiveState("selected")} className={`${btnActive.available? "border-t border-b border-r rounded-r-xl text-gray-500  px-7 py-3" : "border-t border-b border-r rounded-r-xl bg-[#E7FE29] font-bold text-black px-7 py-3"}`}>Selected ({selectedPlayers.length})</button>
+                    <button onClick={() => handleBtnActiveState("selected")} className={`${btnActive.available? "border-t border-b border-r rounded-r-xl text-gray-500  lg:px-7 py-3" : "border-t border-b border-r rounded-r-xl bg-[#E7FE29] font-bold text-black px-7 py-3"}`}>Selected ({selectedPlayers.length})</button>
                 </div>
             </div>
 

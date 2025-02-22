@@ -3,11 +3,11 @@
       "id": 1,
       "name": "Ellyse Perry",
       "country": "Australia",
-      "image": "https://i.ibb.co.com/6JTLCMrH/download.jpg",
+      "image": "https://i.ibb.co.com/1Jd3GcDN/download.jpg[/img][/url]",
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm fast",
-      "biddingPrice": "$2.5M"
+      "biddingPrice": "500000"
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "role": "Batsman",
       "battingType": "Left-hand bat",
       "bowlingType": "Right-arm off-spin",
-      "biddingPrice": "$2.0M"
+      "biddingPrice": "1000000"
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "role": "Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm medium",
-      "biddingPrice": "$2.2M"
+      "biddingPrice": "150000"
     },
     {
       "id": 4,
@@ -37,7 +37,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm medium",
-      "biddingPrice": "$2.3M"
+      "biddingPrice": "$5000000"
     },
     {
       "id": 5,
@@ -47,7 +47,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm off-spin",
-      "biddingPrice": "$2.1M"
+      "biddingPrice": "600000"
     },
     {
       "id": 6,
@@ -57,7 +57,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm off-spin",
-      "biddingPrice": "$1.9M"
+      "biddingPrice": "8000000"
     },
     {
       "id": 7,
@@ -67,17 +67,17 @@
       "role": "Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm off-spin",
-      "biddingPrice": "$1.8M"
+      "biddingPrice": "1000000"
     },
     {
       "id": 8,
       "name": "Suzie Bates",
-      "country": "New Zealand",
+      "country": "India",
       "image": "https://i.ibb.co.com/RTLTbP8F/Whats-App-Image-2022-12-09-at-6-52-34-PM.jpg[/img][/url]",
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm medium",
-      "biddingPrice": "$2.0M"
+      "biddingPrice": "50000000"
     },
     {
       "id": 9,
@@ -87,7 +87,7 @@
       "role": "All-rounder",
       "battingType": "Left-hand bat",
       "bowlingType": "Right-arm off-spin",
-      "biddingPrice": "$1.7M"
+      "biddingPrice": "30000000"
     },
     {
       "id": 10,
@@ -97,7 +97,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm medium",
-      "biddingPrice": "$2.4M"
+      "biddingPrice": "50000000"
     },
     {
       "id": 11,
@@ -107,7 +107,7 @@
       "role": "Wicketkeeper-Batsman",
       "battingType": "Left-hand bat",
       "bowlingType": "None",
-      "biddingPrice": "$1.9M"
+      "biddingPrice": "7000000"
     },
     {
       "id": 12,
@@ -117,7 +117,7 @@
       "role": "Wicketkeeper-Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "None",
-      "biddingPrice": "$2.2M"
+      "biddingPrice": "10000000"
     },
     {
       "id": 13,
@@ -127,7 +127,7 @@
       "role": "Bowler",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm fast",
-      "biddingPrice": "$1.6M"
+      "biddingPrice": "20000000"
     },
     {
       "id": 14,
@@ -137,7 +137,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm leg-spin",
-      "biddingPrice": "$2.3M"
+      "biddingPrice": "40000000"
     },
     {
       "id": 15,
@@ -147,7 +147,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm fast-medium",
-      "biddingPrice": "$2.1M"
+      "biddingPrice": "50000000000"
     }
   ]
   

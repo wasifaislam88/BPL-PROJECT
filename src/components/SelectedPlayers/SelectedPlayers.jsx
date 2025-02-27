@@ -1,7 +1,26 @@
 import PropTypes from 'prop-types';
-
-const SelectedPlayers = ({ selectedPlayers, handleBtnActiveState }) => {
+import { toast } from "react-toastify";
+const SelectedPlayers = ({ selectedPlayers, handleBtnActiveState, setSelectedPlayers }) => {
+  
+  const handleDelete = (player)=>{
+   setSelectedPlayers(abc=>abc.filter(xyz=>xyz.id !==player.id))
+   toast('🦄 Wow so easy!', {
+    position: "top-right",
+    autoClose: 1000,
+    hideProgressBar: false,
+    closeOnClick: false,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    
+    });
+  }
+  
+  
+  
   return (
+    
     <div className="mb-96">
       <ul className="mt-8 mb-12 space-y-6">
         {selectedPlayers.map(player => (
@@ -24,7 +43,7 @@ const SelectedPlayers = ({ selectedPlayers, handleBtnActiveState }) => {
               </div>
 
               <div>
-                <button>
+                <button onClick={()=>handleDelete(player)}>
                   <i className="fa-solid fa-trash-can w-5 h-5 text-red-400"></i>
                 </button>
               </div>
@@ -48,6 +67,7 @@ const SelectedPlayers = ({ selectedPlayers, handleBtnActiveState }) => {
 SelectedPlayers.propTypes = {
   selectedPlayers: PropTypes.array.isRequired,
   handleBtnActiveState: PropTypes.func.isRequired,
+  setSelectedPlayers:PropTypes.array.isRequired,
 };
 
 export default SelectedPlayers;

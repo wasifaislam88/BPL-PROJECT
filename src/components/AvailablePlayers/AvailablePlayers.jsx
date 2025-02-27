@@ -124,9 +124,7 @@ const handleSelectPlayer = (player) => {
 
 };
 
-
-
-
+//  console.log('wasifa')
 
 
     return (
@@ -141,7 +139,7 @@ const handleSelectPlayer = (player) => {
             </div>
 
             {
-                btnActive.available? (<Players onSelectPlayer={handleSelectPlayer}></Players>) : (<SelectedPlayers selectedPlayers={selectedPlayers} handleBtnActiveState={handleBtnActiveState}></SelectedPlayers>)
+                btnActive.available? (<Players onSelectPlayer={handleSelectPlayer}></Players>) : (<SelectedPlayers setSelectedPlayers={setSelectedPlayers} selectedPlayers={selectedPlayers} handleBtnActiveState={handleBtnActiveState}></SelectedPlayers>)
                 
             }
         </div>

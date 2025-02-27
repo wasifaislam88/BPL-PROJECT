@@ -7,13 +7,13 @@ const Navbar = ({ coins }) => {
     <nav className="container mx-auto w-full px-4 md:px-8 sticky top-0 bg-white z-10 shadow-md">
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:flex justify-between items-center gap-4 py-4">
-        
-     
+
+
         <div className="flex justify-center sm:justify-start">
           <img src={logo} alt="Logo" className="h-10 md:h-12" />
         </div>
 
-     
+
         <ul className="grid grid-cols-2 sm:flex sm:justify-center gap-4 md:gap-10 text-[#5a5a5a] font-semibold text-center">
           <li><a href="#" className="hover:text-black">Home</a></li>
           <li><a href="#" className="hover:text-black">Fixture</a></li>

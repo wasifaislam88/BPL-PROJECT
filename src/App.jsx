@@ -18,10 +18,10 @@ function App() {
 
   // toast alert for adding free coin
   const handleAddCoins = () => {
-    setCoins(pervCoins => pervCoins + 60000000);
-    toast.success("Free Credit 60000000 Added to your Account!",{
+    setCoins(pervCoins => pervCoins + 500000);
+    toast.success("Free Credit 500000 Added to your Account!",{
       position: "top-center",
-      autoClose: 3000,
+      autoClose: 1000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,

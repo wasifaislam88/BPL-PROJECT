@@ -4,7 +4,7 @@ import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 import PropTypes from 'prop-types';
 import { toast } from "react-toastify";
 
-const AvailablePlayers = ({handleBtnActiveState, btnActive, coins}) => {
+const AvailablePlayers = ({handleBtnActiveState, btnActive, coins, setCoins}) => {
     const [availablePlayers, setAvailablePlayers] = useState([]);
 
     const [selectedPlayers, setSelectedPlayers] = useState([]);
@@ -16,49 +16,118 @@ const AvailablePlayers = ({handleBtnActiveState, btnActive, coins}) => {
         .then(data => setAvailablePlayers(data))
     }, [])
 
-    const handleSelectPlayer = (player) => {
-        if (player.biddingPrice < coins) {
-            if (selectedPlayers.length<6) {
-                const newSelectedPlayers = [...selectedPlayers, player];
-                setSelectedPlayers(newSelectedPlayers);
-                toast.success(`Congratulation !! ${player.name} is now in your squad`,{
-                    position: "top-center",
-                    autoClose: 3000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined
-                })
-            }
+    // const handleSelectPlayer = (player) => {
+    //     if (player.biddingPrice < coins) {
+    //         if (selectedPlayers.length<6) {
+    //             const newSelectedPlayers = [...selectedPlayers, player];
+    //             setSelectedPlayers(newSelectedPlayers);
+    //             toast.success(`Congratulation !! ${player.name} is now in your squad`,{
+    //                 position: "top-center",
+    //                 autoClose: 3000,
+    //                 hideProgressBar: false,
+    //                 closeOnClick: true,
+    //                 pauseOnHover: true,
+    //                 draggable: true,
+    //                 progress: undefined
+    //             })
+    //         }
 
-            else {
-                toast.error("Sorry!! Not enough space in your selected players slot.", {
-                    position: "top-center",
-                   autoClose: 3000,
-                   hideProgressBar: false,
-                   closeOnClick: true,
-                   pauseOnHover: true,
-                   draggable: true,
-                   progress: undefined,
-                   theme: "colored",
-               })
-            }
-        }
+    //         else {
+    //             toast.error("Sorry!! Not enough space in your selected players slot.", {
+    //                 position: "top-center",
+    //                autoClose: 3000,
+    //                hideProgressBar: false,
+    //                closeOnClick: true,
+    //                pauseOnHover: true,
+    //                draggable: true,
+    //                progress: undefined,
+    //                theme: "colored",
+    //            })
+    //         }
+    //     }
 
-        else {
-            toast.error("Not enough coins to select this player! Please get coin from Claim Free Credit!", {
-                 position: "top-center",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-            })
-        }
+    //     else {
+    //         toast.error("Not enough coins to select this player! Please get coin from Claim Free Credit!", {
+    //              position: "top-center",
+    //             autoClose: 3000,
+    //             hideProgressBar: false,
+    //             closeOnClick: true,
+    //             pauseOnHover: true,
+    //             draggable: true,
+    //             progress: undefined,
+    //             theme: "colored",
+    //         })
+    //     }
+    // }
+
+    
+
+const handleSelectPlayer = (player) => {
+    // Check if coins are less than the bidding price
+    if (Number(player.biddingPrice) > coins) {
+        toast.error("Not enough coins to select this player! Please get coin from Claim Free Credit!", {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+        return; // Exit the function if coins are insufficient
     }
+
+    // Check if there are more than 6 selected players
+    if (selectedPlayers.length >= 6) {
+        toast.error("Sorry!! Not enough space in your selected players slot.", {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+        return; // Exit the function if there are already 6 players
+    }
+
+    // Check if the player is already selected
+    if (selectedPlayers.some(selectedPlayerw => selectedPlayerw.id === player.id)) {
+        toast.error(`${player.name} is already in your squad!`, {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+        return; // Exit the function if the player is already selected
+    }
+
+    // Otherwise, add the player to the selected players list and show a success toast
+    const newSelectedPlayers = [...selectedPlayers, player];
+    setSelectedPlayers(newSelectedPlayers);
+    toast.success(`Congratulation!! ${player.name} is now in your squad`, {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+    setCoins(abc=>abc-player.biddingPrice)
+
+};
+
+
+
+
+
 
     return (
         <div className="container mx-auto ">
@@ -82,7 +151,8 @@ const AvailablePlayers = ({handleBtnActiveState, btnActive, coins}) => {
 AvailablePlayers.propTypes ={
     handleBtnActiveState: PropTypes.object.isRequired,
     btnActive: PropTypes.object.isRequired,
-    coins: PropTypes.number.isRequired
+    coins: PropTypes.number.isRequired,
+    setCoins:PropTypes.array.isRequired
 }
 
 export default AvailablePlayers;

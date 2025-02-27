@@ -7,7 +7,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm fast",
-      "biddingPrice": "500000"
+      "biddingPrice": "300000"
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "role": "Batsman",
       "battingType": "Left-hand bat",
       "bowlingType": "Right-arm off-spin",
-      "biddingPrice": "1000000"
+      "biddingPrice": "100000"
     },
     {
       "id": 3,
@@ -37,7 +37,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm medium",
-      "biddingPrice": "$5000000"
+      "biddingPrice": "300000"
     },
     {
       "id": 5,
@@ -47,7 +47,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm off-spin",
-      "biddingPrice": "600000"
+      "biddingPrice": "200000"
     },
     {
       "id": 6,
@@ -57,7 +57,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm off-spin",
-      "biddingPrice": "8000000"
+      "biddingPrice": "100000"
     },
     {
       "id": 7,
@@ -77,7 +77,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm medium",
-      "biddingPrice": "50000000"
+      "biddingPrice": "500000"
     },
     {
       "id": 9,
@@ -87,7 +87,7 @@
       "role": "All-rounder",
       "battingType": "Left-hand bat",
       "bowlingType": "Right-arm off-spin",
-      "biddingPrice": "30000000"
+      "biddingPrice": "300000"
     },
     {
       "id": 10,
@@ -97,7 +97,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm medium",
-      "biddingPrice": "50000000"
+      "biddingPrice": "50000"
     },
     {
       "id": 11,
@@ -107,7 +107,7 @@
       "role": "Wicketkeeper-Batsman",
       "battingType": "Left-hand bat",
       "bowlingType": "None",
-      "biddingPrice": "7000000"
+      "biddingPrice": "70000"
     },
     {
       "id": 12,
@@ -117,7 +117,7 @@
       "role": "Wicketkeeper-Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "None",
-      "biddingPrice": "10000000"
+      "biddingPrice": "10000"
     },
     {
       "id": 13,
@@ -127,7 +127,7 @@
       "role": "Bowler",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm fast",
-      "biddingPrice": "20000000"
+      "biddingPrice": "200000"
     },
     {
       "id": 14,
@@ -137,7 +137,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm leg-spin",
-      "biddingPrice": "40000000"
+      "biddingPrice": "20000"
     },
     {
       "id": 15,
@@ -147,7 +147,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm fast-medium",
-      "biddingPrice": "50000000000"
+      "biddingPrice": "500000"
     }
   ]
   
